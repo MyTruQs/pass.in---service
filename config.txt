@@ -1,0 +1,15 @@
+dev:
+  preparativo:
+    - npm install
+
+  execução:
+    - npm run dev
+
+prod:
+  preparativo:
+    - npm install
+    - npm build
+    - npm prune --prod
+
+  execução:
+    - npm start
